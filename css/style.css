@@ -498,4 +498,244 @@ nav a:hover {
   }
 }
 
+.presupuesto {
+  background-color: #fffdfd;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+}
+.presupuesto__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.presupuesto h2, .presupuesto h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Bungee Inline", sans-serif;
+  border-bottom: 2px solid yellow;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.presupuesto .formulario {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.presupuesto .formulario__grupo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.presupuesto .formulario__grupo input {
+  flex: 1;
+  background-color: #000000;
+  border: none;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+}
+.presupuesto .formulario__servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: rgb(0, 0, 0);
+}
+.presupuesto .formulario__servicios label {
+  flex: 1 1 200px;
+}
+.presupuesto .formulario textarea {
+  background-color: #000000;
+  border: none;
+  padding: 1rem;
+  min-height: 150px;
+  color: white;
+}
+.presupuesto .formulario button {
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-left: 3px solid rgb(0, 0, 0);
+  align-self: flex-start;
+}
+.presupuesto__contacto {
+  flex: 1;
+  background-color: #000000;
+  padding: 1.5rem;
+  border-top: 3px solid yellow;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.presupuesto__contacto .redes {
+  display: flex;
+  gap: 10px;
+}
+.presupuesto__contacto .redes i {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 320px) {
+  .presupuesto {
+    padding: 1rem;
+  }
+  .presupuesto__container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .presupuesto .formulario__grupo {
+    flex-direction: column;
+  }
+  .presupuesto .formulario__grupo input {
+    width: 100%;
+  }
+  .presupuesto .formulario__servicios {
+    flex-direction: column;
+  }
+  .presupuesto .formulario__servicios label {
+    width: 100%;
+  }
+  .presupuesto .formulario textarea {
+    width: 100%;
+  }
+  .presupuesto .formulario button {
+    width: 100%;
+    text-align: center;
+  }
+  .presupuesto__contacto {
+    padding: 1rem;
+    font-size: 14px;
+  }
+  .presupuesto__contacto .redes {
+    justify-content: flex-start;
+  }
+  .presupuesto__contacto .redes i {
+    padding: 8px;
+  }
+  .presupuesto h2, .presupuesto h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 320px) {
+  .presupuesto__container {
+    flex-direction: column;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+  form {
+    width: 100%;
+  }
+  input, textarea, select, button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .formulario__grupo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .presupuesto__contacto {
+    font-size: 14px;
+    padding: 1rem 0;
+  }
+  .formulario__servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+.quienesSomos {
+  background-image: url("../img/mag.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quienesSomos .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 80%;
+}
+.quienesSomos .quienes-texto h1 {
+  color: white;
+}
+
+.quienesSomos {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 60px 20px;
+}
+.quienesSomos .grid-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.quienesSomos .quienes-texto {
+  flex: 1 1 400px;
+}
+.quienesSomos .quienes-texto h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+.quienesSomos .quienes-texto h3 {
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+.quienesSomos .quienes-texto .subtitulo {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.quienesSomos .quienes-texto p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.quienesSomos .quienes-texto h4 {
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 25px;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+.quienesSomos .quienes-texto .estadisticas {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  flex-direction: center;
+}
+.quienesSomos .quienes-texto .estadisticas li {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.quienesSomos .quienes-texto .estadisticas li strong {
+  color: #ffffff;
+}
+.quienesSomos .quienes-imagen {
+  flex: 1 1 350px;
+  text-align: center;
+}
+.quienesSomos .quienes-imagen img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
 /*# sourceMappingURL=style.css.map */
