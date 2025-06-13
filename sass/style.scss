@@ -936,3 +936,38 @@ $color-acento: #ffea00; // amarillo
         }
     }
 }
+.radial-gradient{
+    h1 {
+        position: relative;
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: white;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right,yellow, rgb(0, 0, 0));
+            z-index: -1;
+            border-radius: 8px;
+        }
+    }
+
+    h2 {
+        position: relative;
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: white;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right,yellow, rgb(0, 0, 0));
+            z-index: -1;
+            border-radius: 8px;
+        }
+    }
+}

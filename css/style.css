@@ -877,4 +877,35 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
+.radial-gradient h1 {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  z-index: 1;
+}
+.radial-gradient h1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, yellow, rgb(0, 0, 0));
+  z-index: -1;
+  border-radius: 8px;
+}
+.radial-gradient h2 {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  z-index: 1;
+}
+.radial-gradient h2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, yellow, rgb(0, 0, 0));
+  z-index: -1;
+  border-radius: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */
