@@ -1,5 +1,8 @@
 // sass --watch ./sass/style.scss ./css/style.css
 
 main {
-    background-image: url(../img/foto1.png);
+    .section-principal{
+        background-image: url("../img/foto1.png");
+    }
+    
 }

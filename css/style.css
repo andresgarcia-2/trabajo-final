@@ -1,5 +1,5 @@
-main {
-  background-image: url(../img/foto1.png);
+main .section-principal {
+    background-image: url("../img/foto1.png");
 }
 
 /*# sourceMappingURL=style.css.map */
