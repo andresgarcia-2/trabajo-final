@@ -689,7 +689,7 @@ img {
     }
 
     .quienes-texto {
-        flex: 1 1 400px;
+        flex:1 1 400px;
 
         h1 {
             font-size: 2.5em;
@@ -735,6 +735,7 @@ img {
             li {
                 margin-bottom: 8px;
                 font-weight: bold;
+                font-size: 0.8em;
 
                     strong {
                         color: #ffffff;
@@ -752,5 +753,109 @@ img {
             border-radius: 20px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
+    }
+}
+@media (max-width: 768px) {
+    .quienesSomos {
+        padding: 35px 15px;
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6); // Fondo oscuro para que el texto se vea
+            color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            max-width: 100%;
+            height: 800px;
+        }
+        .overlay {
+            img {
+                width: 80%;
+                max-width: 320px;
+                max-height: 360px;
+                margin-top: 1rem;
+                border-radius: 10px;
+            }
+        }
+
+
+        .grid-contenedor {
+            border: 2px solid yellow;
+            gap: 20px;
+        }
+
+        .quienes-texto {
+            text-align:center;
+
+            h1 {
+                font-size: 1rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            .subtitulo {
+                font-size: 0.9rem;
+            }
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.6rem;
+            }
+
+            .estadisticas {
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .quienes-imagen {
+            img {
+                width:100%;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .quienesSomos {
+        .quienes-texto {
+            h1 {
+                font-size: 1rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            .subtitulo, h4, p {
+                font-size: 0.5rem;
+            }
+        }
+
+        .quienes-imagen img {
+            width: 100%;
+        }
+
+        .overlay {
+            img {
+                width: 80%;
+                max-width: 320px;
+                max-height: 360px;
+                margin-top: 1rem;
+                border-radius: 10px;
+            }
+        }
+
+        
     }
 }

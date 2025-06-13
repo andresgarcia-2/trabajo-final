@@ -724,6 +724,7 @@ nav a:hover {
 .quienesSomos .quienes-texto .estadisticas li {
   margin-bottom: 8px;
   font-weight: bold;
+  font-size: 0.8em;
 }
 .quienesSomos .quienes-texto .estadisticas li strong {
   color: #ffffff;
@@ -736,6 +737,82 @@ nav a:hover {
   max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .quienesSomos {
+    padding: 35px 15px;
+  }
+  .quienesSomos .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 100%;
+    height: 800px;
+  }
+  .quienesSomos .overlay img {
+    width: 80%;
+    max-width: 320px;
+    max-height: 360px;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  .quienesSomos .grid-contenedor {
+    border: 2px solid yellow;
+    gap: 20px;
+  }
+  .quienesSomos .quienes-texto {
+    text-align: center;
+  }
+  .quienesSomos .quienes-texto h1 {
+    font-size: 1rem;
+  }
+  .quienesSomos .quienes-texto h3 {
+    font-size: 1rem;
+  }
+  .quienesSomos .quienes-texto .subtitulo {
+    font-size: 0.9rem;
+  }
+  .quienesSomos .quienes-texto h4 {
+    font-size: 1rem;
+  }
+  .quienesSomos .quienes-texto p {
+    font-size: 0.6rem;
+  }
+  .quienesSomos .quienes-texto .estadisticas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quienesSomos .quienes-texto .estadisticas li {
+    margin-bottom: 10px;
+  }
+  .quienesSomos .quienes-imagen img {
+    width: 100%;
+    margin: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .quienesSomos .quienes-texto h1 {
+    font-size: 1rem;
+  }
+  .quienesSomos .quienes-texto h3 {
+    font-size: 1rem;
+  }
+  .quienesSomos .quienes-texto .subtitulo, .quienesSomos .quienes-texto h4, .quienesSomos .quienes-texto p {
+    font-size: 0.5rem;
+  }
+  .quienesSomos .quienes-imagen img {
+    width: 100%;
+  }
+  .quienesSomos .overlay img {
+    width: 80%;
+    max-width: 320px;
+    max-height: 360px;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
