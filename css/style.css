@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -206,11 +207,295 @@ nav a:hover {
   text-align: center;
   width: 100%;
   height: 100vh;
-  color: rgb(0, 0, 0);
+  color: white;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-image: url("../img/img_fondo2.webp");
+}
+
+.pie {
+  background-color: rgb(243, 243, 106);
+}
+
+.contenedor {
+  width: 100%;
+  background-color: rgb(230, 230, 106);
+  background-size: 100%;
+}
+
+.presu-titulos {
+  margin: 20px;
+  text-align: center;
+}
+.presu-titulos p {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+.presu-titulos h2 {
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.viñetas {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.carta-4,
+.carta-5,
+.carta-6, .carta-3, .carta-2, .carta-1 {
+  width: 350px;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+  border-radius: 28px;
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.carta-1 {
+  height: 165px;
+  margin-left: 10px;
+}
+.carta-1 p {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.carta-2 {
+  height: 210px;
+  padding: 10px;
+}
+.carta-2 p {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.carta-3 {
+  height: 165px;
+  margin-right: 10px;
+}
+.carta-3 p {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.viñetas-2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.carta-4,
+.carta-5,
+.carta-6 {
+  width: 320px;
+  height: 240px;
+  font-size: 33px;
+  border-radius: 28px;
+  padding: 10px;
+}
+.carta-4 h4,
+.carta-5 h4,
+.carta-6 h4 {
+  color: yellow;
+  font-weight: 400;
+  font-style: normal;
+}
+.carta-4 p,
+.carta-5 p,
+.carta-6 p {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.carta-4 {
+  height: 245px;
+  margin-left: 10px;
+}
+
+.carta-6 {
+  width: 360px;
+  margin-right: 10px;
+}
+
+.carta-1, .carta-2, .carta-3, .carta-4,
+.carta-5,
+.carta-6 {
+  background-color: black;
+  color: yellow;
+  text-align: center;
+  border-radius: 28px;
+  font-size: 35px;
+}
+
+.viñetas,
+.viñetas-2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+@media (max-width: 320px) {
+  .viñetas,
+  .viñetas-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.carta-1,
+.carta-2,
+.carta-3,
+.carta-4,
+.carta-5,
+.carta-6 {
+  font-family: "Bebas Neue", sans-serif;
+  padding: 10px;
+}
+.carta-1 p, .carta-1 h4,
+.carta-2 p,
+.carta-2 h4,
+.carta-3 p,
+.carta-3 h4,
+.carta-4 p,
+.carta-4 h4,
+.carta-5 p,
+.carta-5 h4,
+.carta-6 p,
+.carta-6 h4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+@media (max-width: 768px) {
+  .carta-1,
+  .carta-2,
+  .carta-3,
+  .carta-4,
+  .carta-5,
+  .carta-6 {
+    width: 250px;
+    height: 260px;
+    font-size: 32.5px;
+  }
+}
+@media (max-width: 320px) {
+  .carta-1,
+  .carta-2,
+  .carta-3,
+  .carta-4,
+  .carta-5,
+  .carta-6 {
+    width: 300px;
+    font-size: 35px;
+  }
+}
+
+.carta-1 {
+  width: 350px;
+  height: 165px;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .carta-1 {
+    height: 260px;
+  }
+}
+@media (max-width: 320px) {
+  .carta-1 {
+    width: 280px;
+    height: 205px;
+    margin-right: 10px;
+  }
+}
+
+.carta-2 {
+  width: 350px;
+  height: 210px;
+}
+@media (max-width: 320px) {
+  .carta-2 {
+    width: 280px;
+    height: 210px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .carta-2 {
+    font-size: 32.5px;
+  }
+}
+
+.carta-3 {
+  width: 350px;
+  height: 165px;
+  margin-right: 10px;
+}
+@media (max-width: 320px) {
+  .carta-3 {
+    width: 280px;
+    height: 210px;
+    margin-left: 10px;
+  }
+}
+
+.carta-4 {
+  width: 320px;
+  height: 245px;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .carta-4 {
+    height: 290px;
+  }
+}
+@media (max-width: 320px) {
+  .carta-4 {
+    width: 300px;
+    height: 285px;
+    margin-right: 10px;
+  }
+}
+
+.carta-5 {
+  width: 320px;
+  height: 240px;
+}
+@media (max-width: 768px), (max-width: 320px) {
+  .carta-5 {
+    width: 300px;
+    height: 290px;
+  }
+}
+
+.carta-6 {
+  width: 360px;
+  height: 240px;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .carta-6 {
+    width: 300px;
+    height: 290px;
+    font-size: 31.8px;
+  }
+}
+@media (max-width: 320px) {
+  .carta-6 {
+    width: 300px;
+    height: 290px;
+    margin-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

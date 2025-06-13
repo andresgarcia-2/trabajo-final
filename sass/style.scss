@@ -1,4 +1,5 @@
 // sass --watch ./sass/style.scss ./css/style.css
+// sass --watch sass/style.scss:css/style.css
 
 *{
     margin: 0;
@@ -214,4 +215,257 @@ img {
     background-position: center center;
     background-size: cover;
     background-image: url("../img/img_fondo2.webp");
+}
+.pie {
+    background-color: rgb(243, 243, 106);
+}
+
+.contenedor {
+    width: 100%;
+    background-color: rgb(230, 230, 106);
+    background-size: 100%;
+}
+
+.presu-titulos {
+    margin: 20px;
+    text-align: center;
+
+    p {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+    }
+
+    h2 {
+        font-family: "Bungee Inline", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.viñetas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+%base-carta {
+    width: 350px;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 35px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.carta-1 {
+    @extend %base-carta;
+    height: 165px;
+    margin-left: 10px;
+
+    p {
+        color: white;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.carta-2 {
+    @extend %base-carta;
+    height: 210px;
+    padding: 10px;
+
+    p {
+        color: white;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.carta-3 {
+    @extend %base-carta;
+    height: 165px;
+    margin-right: 10px;
+
+    p {
+        color: white;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.viñetas-2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carta-4,
+.carta-5,
+.carta-6 {
+    @extend %base-carta;
+    width: 320px;
+    height: 240px;
+    font-size: 33px;
+    border-radius: 28px;
+    padding: 10px;
+
+    h4 {
+        color:yellow;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    p {
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.carta-4 {
+    height: 245px;
+    margin-left: 10px;
+}
+
+.carta-6 {
+    width: 360px;
+    margin-right: 10px;
+}
+%base-carta {
+  background-color: black;
+  color: yellow;
+  text-align: center;
+  border-radius: 28px;
+  font-size: 35px;
+}
+
+.viñetas,
+.viñetas-2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  @media (max-width: 320px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.carta-1,
+.carta-2,
+.carta-3,
+.carta-4,
+.carta-5,
+.carta-6 {
+    @extend %base-carta;
+    font-family: "Bebas Neue", sans-serif;
+
+    p, h4 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color:white;
+    }
+
+    padding: 10px; 
+
+    @media (max-width: 768px) {
+        width: 250px;
+        height: 260px;
+        font-size: 32.5px;
+    }
+
+    @media (max-width: 320px) {
+        width: 300px;
+        font-size: 35px;
+    }
+}
+
+.carta-1 {
+    width: 350px;
+    height: 165px;
+    margin-left: 10px;
+
+    @media (max-width: 768px) {
+        height: 260px;
+    }
+
+    @media (max-width: 320px) {
+        width: 280px;
+        height: 205px;
+        margin-right: 10px;
+    }
+}
+
+.carta-2 {
+    width: 350px;
+    height: 210px;
+
+    @media (max-width: 320px) {
+        width: 280px;
+        height: 210px;
+        margin-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 32.5px;
+    }
+}
+
+.carta-3 {
+    width: 350px;
+    height: 165px;
+    margin-right: 10px;
+
+    @media (max-width: 320px) {
+        width: 280px;
+        height: 210px;
+        margin-left: 10px;
+    }
+}
+
+.carta-4 {
+    width: 320px;
+    height: 245px;
+    margin-left: 10px;
+
+    @media (max-width: 768px) {
+        height: 290px;
+    }
+
+    @media (max-width: 320px) {
+        width: 300px;
+        height: 285px;
+        margin-right: 10px;
+    }
+}
+
+.carta-5 {
+    width: 320px;
+    height: 240px;
+
+    @media (max-width: 768px), (max-width: 320px) {
+        width: 300px;
+        height: 290px;
+    }
+}
+
+.carta-6 {
+    width: 360px;
+    height: 240px;
+    margin-right: 10px;
+
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 290px;
+        font-size: 31.8px;
+    }
+
+    @media (max-width: 320px) {
+        width: 300px;
+        height: 290px;
+        margin-left: 10px;
+    }
 }
