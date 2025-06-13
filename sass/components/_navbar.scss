@@ -1,0 +1,15 @@
+.navbar {
+  background-color: yellow;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+
+  &:hover {
+    color: white;
+  }
+}
