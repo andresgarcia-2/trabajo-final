@@ -191,6 +191,11 @@ nav a:hover {
 .boton:hover {
   background-color: rgb(133, 133, 3);
 }
+@media (max-width: 320px) {
+  .boton {
+    font-size: 1.1em;
+  }
+}
 
 .contenedor-principal {
   max-width: 1200px;

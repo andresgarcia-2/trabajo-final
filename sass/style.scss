@@ -194,6 +194,10 @@ img {
     &:hover {
         background-color: rgb(133, 133, 3);
     }
+
+    @media (max-width: 320px){
+        font-size: 1.1em;
+    }
 }
 
 .contenedor-principal {
